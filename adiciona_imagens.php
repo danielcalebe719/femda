@@ -1,5 +1,6 @@
 <?php
 require_once("conecta.php");
+//aqui
 ?>
 <!DOCTYPE html>
 <html>
