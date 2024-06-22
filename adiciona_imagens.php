@@ -1,6 +1,6 @@
 <?php
 require_once("conecta.php");
-//aqui denovo
+//aqui denovo apenas testes de commit
 ?>
 <!DOCTYPE html>
 <html>
