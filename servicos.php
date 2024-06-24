@@ -130,7 +130,8 @@ mysqli_close($conexao);
                     echo "<li>Duração de $duracaoHoras horas</li>";
                     echo '</ul>';
                     echo '<div class="btn-wrap">';
-                    echo '<a href="#" class="btn-buy">Selecionar Serviço</a>';
+                    echo '<a href="pedidos.php?idServico=' . $idServico . '" class="btn-buy">Selecionar Serviço</a>';
+
                     echo '</div>';
                     echo '</div>';
                     echo '</div>';
@@ -161,26 +162,22 @@ mysqli_close($conexao);
                 </div>
 
                 <div class=" col-md-8 mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="200" id="secondBox" style="display:none;">
-                    <div class="box featured">
-                        <h4>Personalize os Serviços:</h4>
-                        <form method="post" action="processar_personalizado.php">
-                            <p>Barmans: <input type="number" name="barmans" min="0" max="999" class="inpt" id="barmans"></p>
-                            <p>Garçons: <input type="number" name="garcons" min="0" max="999" class="inpt" id="garcons"></p>
-                            <p>Cozinheiros: <input type="number" name="cozinheiros" min="0" max="999" class="inpt" id="cozinheiros"></p>
-                            <p>Quantidade de Pessoas: <input type="number" name="quantidadePessoas" min="0" max="999" class="inpt" id="quantidadePessoas"></p>
-                            <p>Duração da Festa (Horas): <input type="number" name="duracaoHoras" min="1" max="24" class="inpt" id="duracaoHoras"></p>
-                            <p id="preco">Preço: R$0,00</p>
-                            <div class="btn-wrap">
-                                <button type="submit" class="btn-buy">Selecionar Serviço</button>
-                            </div>
-                        </form>
+    <div class="box featured">
+        <h4>Personalize os Serviços:</h4>
+        <form method="post" action="servicosProcessar.php">
+            <p>Barmans: <input type="number" name="barmans" min="0" max="999" class="inpt" id="barmans"></p>
+            <p>Garçons: <input type="number" name="garcons" min="0" max="999" class="inpt" id="garcons"></p>
+            <p>Cozinheiros: <input type="number" name="cozinheiros" min="0" max="999" class="inpt" id="cozinheiros"></p>
+            <p>Quantidade de Pessoas: <input type="number" name="quantidadePessoas" min="0" max="999" class="inpt" id="quantidadePessoas"></p>
+            <p>Duração da Festa (Horas): <input type="number" name="duracaoHoras" min="1" max="24" class="inpt" id="duracaoHoras"></p>
+            <p id="preco">Preço: R$0,00</p>
+            <div class="btn-wrap">
+                <button type="submit" class="btn-buy">Selecionar Serviço</button>
+            </div>
+        </form>
+    </div>
+</div>
 
-                        <div class="btn-wrap">
-                            <a href="#" class="btn-buy">Selecionar Serviço</a>
-                        </div>
-
-                    </div>
-                </div>
             </div>
         </div>
     </div>

@@ -115,7 +115,7 @@ require("conecta2.php");
   
   <header id="header" class="d-flex align-items-center">
   <div class="container d-flex align-items-center justify-content-between">
-    <a href="index.html"><img src="assets/img/logo.png" alt="" style="max-width: 50%;"><span></span></a>
+    <a href="home.php"><img src="assets/img/logo.png" alt="" style="max-width: 50%;"><span></span></a>
     <nav id="navbar" class="navbar">
       <ul>
         <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
@@ -135,10 +135,12 @@ require("conecta2.php");
             <button class="nav-link btn"><i class="bi bi-bell"></i> Notificações</button>
           </a>
         </li>
+        
         <li id="profile-btn" style="display: none;">
+             <div style="height: 14px;"></div>
           <form action="perfil.php" method="get">
             <input type="hidden" name="idClientes" value="<?php echo $_SESSION['idClientes']?>" >
-          <a href="perfil.php?idClientes=<?php echo $idClientes?>"><button type='submit' class="nav-link btn"><i class="bi bi-person"></i> Perfil</button></a>
+          <a href="perfil.php"><button type='submit' class="nav-link btn"><i class="bi bi-person"></i> Perfil</button></a>
           </form>
         </li>
       </ul>
@@ -198,7 +200,7 @@ if (isset($_SESSION['email'])) {
       <h1 style="color: white;">Bem vindo ao <span style="color: #FF944E;"">Buffet Divino Sabor</span></h1>
       <h2 style="color: white;"">Produzindo eventos com o melhor cardápio desde 2014.</h2>
       <div class="d-flex">
-        <a href="servicos.php" class="btn-get-started scrollto">Faça seu pedido</a>
+        <a href="cadastro2.php" class="btn-get-started scrollto">Faça seu pedido</a>
         
         <a href="https://youtu.be/y6120QOlsfU?si=0Z_6ErtD0vy7wDzB" class="glightbox btn-watch-video"><i class="bi bi-play-circle" style="color: #FA856E;"></i><span style=" color: white; ">Clique e veja um pouco mais sobre nós</span></a>
       </div>

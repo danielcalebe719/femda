@@ -43,7 +43,7 @@
       <button class="submit-button" type="submit" onclick="submitForm()">Entrar</button>
       <div class="separation-line1"></div>
       <div class="separation-line"></div>
-      <a href="#">Quero me cadastrar</a>
+      <a href="cadastro.php">Quero me cadastrar</a>
       <div class="other-options">
         <button class="btn1"><img src="assets/img/google.png" alt="Google Logo" style="padding-right: 10px;">Entre com o Google</button>
         <br>
